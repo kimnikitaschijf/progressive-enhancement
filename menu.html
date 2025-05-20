@@ -22,7 +22,7 @@
 		}
 
 		/* De sidebar die openklapt vanaf de linkerzijde */
-		.side-menu {
+		.side-menu.enhanced {
 			position: fixed;
 			top: 0;
 			left: -250px;
@@ -47,7 +47,7 @@
 
 		.side-menu ul li a {
 			color: rgb(8, 5, 50);
-			text-decoration: none;
+			text-decoration: none; 
 			font-size: 20px;
 		}
 
@@ -68,7 +68,7 @@
 		/* Schrijf hier eventueel je client-side JavaScript */
 
 		// Selecteer de menu knop en het side menu
-		const menuBtn = document.getElementById('menu-btn');
+		const menuBtn = document.getElementBygrtgrId('menu-btn');
 		const sideMenu = document.getElementById('side-menu');
 
 		// Voeg een klik event toe aan de knop
@@ -76,6 +76,8 @@
 			// Voeg of verwijder de 'open' klasse om het menu te openen/sluiten
 			sideMenu.classList.toggle('open');
 		});
+
+		sideMenu.classList.add('enhanced')
 
 		/* Hint: dit component kan volledig met CSS, maar met JS kun je 'm enhancen */
 	</script>
